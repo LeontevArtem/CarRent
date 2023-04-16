@@ -1,0 +1,43 @@
+﻿<Page x:Class="CarRent.Pages.CarDetailedInfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CarRent.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CarDetailedInfo">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/car2blur.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid Height="40" VerticalAlignment="Top" Background="White" x:Name="top">
+            <Label Content="Информация о машине" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20" FontWeight="Bold" Margin="140,0,0,0"/>
+        </Grid>
+        <Grid Margin="0,40,0,0" x:Name="parrent">
+            <Border Background="White" CornerRadius="10" Margin="230,15,15,15">
+                <Grid>
+                    <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled">
+                        <StackPanel>
+                            <Grid x:Name="parrent2">
+                                <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Марка машины:" Margin="10,10,0,0" FontSize="16" FontWeight="Bold"/>
+                                <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Модель машины:" Margin="10,50,0,0" FontSize="16" FontWeight="Bold"/>
+                                <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Цвет машины:" Margin="10,90,0,0" FontSize="16" FontWeight="Bold"/>
+                                <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Год презентации:" Margin="10,130,0,0" FontSize="16" FontWeight="Bold"/>
+                                <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Подробная информация:"  Margin="10,290,0,0"  FontSize="16" FontWeight="Bold"/>
+                                <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Категория:" Margin="10,170,0,0"  FontSize="16" FontWeight="Bold"/>
+                                <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Стоимость аренды:"  Margin="10,210,0,0" FontSize="16" FontWeight="Bold"/>
+                                <Label VerticalAlignment="Top" HorizontalAlignment="Left" Content="Рег. Номер:"  Margin="10,250,0,0" FontSize="16" FontWeight="Bold"/>
+                                <Grid VerticalAlignment="Top" Height="100" Margin="10,330,10,10">
+                                    <RichTextBox x:Name="CarDescription" FontSize="16" />
+                                </Grid>
+                            </Grid>
+                        </StackPanel>
+                    </ScrollViewer>
+                    
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>
